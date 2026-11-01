@@ -1,0 +1,112 @@
+{
+  "info": {
+    "name": "Lab 2 - SQLite CRUD API",
+    "description": "Postman Collection for testing all CRUD endpoints in Lab 2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. GET All Books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", ""]
+        }
+      }
+    },
+    {
+      "name": "2. GET Book By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/1/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "1", ""]
+        }
+      }
+    },
+    {
+      "name": "3. GET Non-Existent Book (404 Check)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/999/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "999", ""]
+        }
+      }
+    },
+    {
+      "name": "4. POST Add New Book",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Compilers: Principles, Techniques, and Tools\",\n  \"author\": \"Alfred V. Aho et al.\",\n  \"price\": 999,\n  \"pages\": 1038\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", ""]
+        }
+      }
+    },
+    {
+      "name": "5. PUT Update Book",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Compilers (Dragon Book 2nd Edition)\",\n  \"author\": \"Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman\",\n  \"price\": 1050,\n  \"pages\": 1040\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/11/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "11", ""]
+        }
+      }
+    },
+    {
+      "name": "6. DELETE Remove Book",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/11/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "11", ""]
+        }
+      }
+    }
+  ]
+}
+
