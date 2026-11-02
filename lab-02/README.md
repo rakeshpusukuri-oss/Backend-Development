@@ -5,8 +5,11 @@
 
 ---
 
-## Live Link
-`Not applicable` — This project runs locally as an Express.js API connected to a file-based SQLite database (`books.db`). Comprehensive Postman and terminal verification screenshots of all five endpoints and database mutations are provided in the [Screenshots](#screenshots) section below.
+## Submission & Repository Links
+- **Course Repository:** [https://github.com/rakeshpusukuri-oss/Backend-Development](https://github.com/rakeshpusukuri-oss/Backend-Development)
+- **Lab 2 Folder:** [https://github.com/rakeshpusukuri-oss/Backend-Development/tree/main/lab-02](https://github.com/rakeshpusukuri-oss/Backend-Development/tree/main/lab-02)
+- **Standalone Lab 2 Repository:** [https://github.com/rakeshpusukuri-oss/Lab-02](https://github.com/rakeshpusukuri-oss/Lab-02)
+- **Live Link:** `Not applicable` — This project runs locally as an Express.js API connected to a file-based SQLite database (`books.db`). Comprehensive Postman and terminal verification screenshots of all five endpoints and database mutations are provided in the [Screenshots](#screenshots) section below.
 
 ---
 
