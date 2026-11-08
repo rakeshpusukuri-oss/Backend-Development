@@ -1,7 +1,7 @@
 # Lab 3: REST API, query parameters, validation, debugging
 
 **Name:** Rakesh · **Registration Number:** 252U1R1207 · **Section:** CSE-2D  
-**Course:** Backend Development Fundamentals (Year II Term II • Aurora) · **Faculty:** Joel Prashanth D
+**Course:** Backend Development Fundamentals (Year II Term II • Aurora) · **Faculty:** Sai Siva Teja 
 
 ---
 
@@ -155,3 +155,4 @@ Import `Lab-03-Postman-Collection.json` directly into Postman to test all 15 suc
 3. **Standardizing Error Responses Across All Failure Cases:**
    - *Problem:* Inconsistent response shapes (e.g. `{ error: "..." }` vs `{ message: "..." }`) create difficulties for client-side API consumers.
    - *Solution:* Standardized all error and confirmation responses to uniform `{ "message": "..." }` payloads across 200, 201, 400, 404, and 500 status codes.
+
